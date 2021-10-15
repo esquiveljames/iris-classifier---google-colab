@@ -1,0 +1,130 @@
+container:
+  type: ColumnPanel
+  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: medium, col_widths: '{}',
+    spacing_below: large, background: ''}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties:
+    col_widths: {}
+    grid_position: QWCSHU,VBKFCU
+  components:
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: large, col_widths: '{}',
+      spacing_below: large, background: ''}
+    name: card_1
+    layout_properties: {grid_position: 'MOIQMN,JTUUOQ'}
+    components:
+    - type: Label
+      properties: {role: headline, align: center, tooltip: '', border: '', foreground: '',
+        visible: true, text: Iris Classifier, font_size: null, font: '', spacing_above: medium,
+        icon_align: left, spacing_below: large, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: title
+      layout_properties: {grid_position: 'NIOTML,KINSOI'}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_3
+      layout_properties: {grid_position: 'WVXPMQ,DAXBGY'}
+    - type: Label
+      properties: {role: input-prompt, align: right, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Sepal length:', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1
+      layout_properties: {grid_position: 'WVXPMQ,VIOHGN'}
+    - type: TextBox
+      properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: (cm),
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: number, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: sepal_length
+      layout_properties: {grid_position: 'WVXPMQ,CDUMFY'}
+      event_bindings: {pressed_enter: iris_measurement_1_pressed_enter}
+    - type: Label
+      properties: {role: input-prompt, align: right, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Petal length:', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_3
+      layout_properties: {grid_position: 'WVXPMQ,WPPJDU'}
+    - type: TextBox
+      properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: (cm),
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: number, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: petal_length
+      layout_properties: {grid_position: 'WVXPMQ,MGNQTH'}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_1
+      layout_properties: {grid_position: 'WVXPMQ,ZRUSJX'}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_4
+      layout_properties: {grid_position: 'DAKDZL,EMOTYZ'}
+    - type: Label
+      properties: {role: input-prompt, align: right, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Sepal width:', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_2
+      layout_properties: {grid_position: 'DAKDZL,PADQPZ'}
+    - type: TextBox
+      properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: (cm),
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: number, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: sepal_width
+      layout_properties: {grid_position: 'DAKDZL,DOGAKH'}
+    - type: Label
+      properties: {role: input-prompt, align: right, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Petal width:', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_4
+      layout_properties: {grid_position: 'DAKDZL,ZMYCPB'}
+    - type: TextBox
+      properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: (cm),
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: number, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: petal_width
+      layout_properties: {grid_position: 'DAKDZL,CZVXYP'}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_2
+      layout_properties: {grid_position: 'DAKDZL,QEVTSU'}
+    - type: Spacer
+      properties: {height: 9}
+      name: spacer_5
+      layout_properties: {grid_position: 'VOUBYM,TQEWCC'}
+    - type: Button
+      properties: {role: raised, align: center, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: Categorise, font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: categorise_button
+      layout_properties: {grid_position: 'WZQVCT,GVBESE'}
+      event_bindings: {click: categorise_button_click}
+    - type: Spacer
+      properties: {height: 8}
+      name: spacer_6
+      layout_properties: {grid_position: 'JQHJTU,OICEJR'}
+    - type: Label
+      properties: {role: subheading, align: center, tooltip: '', border: '', foreground: '',
+        visible: false, text: '', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: species_label
+      layout_properties: {grid_position: 'IPXEAX,RRSVYD'}
+    - type: Image
+      properties: {role: null, vertical_align: center, height: 200, tooltip: '', border: '',
+        foreground: '', visible: false, display_mode: shrink_to_fit, spacing_above: small,
+        source: '', spacing_below: large, background: '', horizontal_align: center}
+      name: iris_image
+      layout_properties: {grid_position: 'IYVRTW,MWVVFW'}
+is_package: true

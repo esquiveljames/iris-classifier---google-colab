@@ -1,0 +1,11 @@
+dependencies: []
+services: []
+startup: {type: form, module: iris_classifier_form}
+package_name: Iris_Classifier___Google_Colab
+allow_embedding: false
+name: Clone of Iris Classifier - Google Colab
+runtime_options: {version: 2, client_version: '3', server_version: python3-full}
+metadata: {}
+startup_form: iris_classifier_form
+db_schema: []
+renamed: true
