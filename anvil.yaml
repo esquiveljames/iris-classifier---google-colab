@@ -7,5 +7,5 @@ name: Clone of Iris Classifier - Google Colab
 runtime_options: {version: 2, client_version: '3', server_version: python3-full}
 metadata: {}
 startup_form: iris_classifier_form
-db_schema: []
+db_schema: {}
 renamed: true
