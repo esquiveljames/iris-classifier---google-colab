@@ -1,10 +1,13 @@
 dependencies: []
-services: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
 startup: {type: form, module: iris_classifier_form}
 package_name: Iris_Classifier___Google_Colab
 allow_embedding: false
 name: Clone of Iris Classifier - Google Colab
-runtime_options: {version: 2, client_version: '3', server_version: python3-full}
+runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
 metadata: {}
 startup_form: iris_classifier_form
 db_schema: {}
