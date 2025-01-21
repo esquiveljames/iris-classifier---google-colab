@@ -12,10 +12,10 @@ class iris_classifier_form(iris_classifier_formTemplate):
   def categorise_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     if self.sepal_length.text and self.sepal_width.text and self.petal_length.text and self.petal_width.text:
-      iris_category = anvil.server.call('predict_iris', self.sepal_length.text,
-                                  self.sepal_width.text,
-                                  self.petal_length.text,
-                                  self.petal_width.text)
+      iris_category = anvil.server.call('predict_iris', float(self.sepal_length.text),
+                                  float(self.sepal_width.text),
+                                  float(self.petal_length.text),
+                                  float(self.petal_width.text)
       if iris_category:
         self.species_label.visible, self.iris_image.visible = True, True
         self.species_label.text = "The species is " + iris_category.capitalize()
